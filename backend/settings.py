@@ -130,9 +130,18 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_URL = "/static/"
-
-
-CORS_ALLOW_HEADERS =  ["https://trainee-miniproject-tracker-fronten-green.vercel.app",]
+CORS_ALLOWED_ORIGINS=["https://trainee-miniproject-tracker-fronten-green.vercel.app",]
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS = [
+  "content-type",
+  "authorization",
+  "accept",
+  "origin",
+  "user-agent",
+  "x-csrftoken",
+  "x-requested-with",
+]
+CORS_ALLOW_METHODS = ["GET","POST","PUT","PATCH","DELETE","OPTIONS"]
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
