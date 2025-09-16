@@ -130,7 +130,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_URL = "/static/"
-CORS_ALLOWED_ORIGINS=["https://trainee-miniproject-tracker-fronten-green.vercel.app",]
+CORS_ALLOWED_ORIGINS=["https://trainee-miniproject-tracker-fronten-peach.vercel.app",]
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = [
   "content-type",
