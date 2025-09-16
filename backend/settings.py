@@ -132,7 +132,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_URL = "/static/"
 
 
-CORS_ALLOW_HEADERS =  ["http://localhost:5173",]
+CORS_ALLOW_HEADERS =  ["https://trainee-miniproject-tracker-fronten.vercel.app",]
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
